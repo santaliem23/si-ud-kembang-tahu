@@ -1,2 +1,2 @@
-# erp-ud-kembang-tahu
-Sistem ERP Produksi UD Kulit Kembang Tahu
+# si-produksi-persediaan-ud-kulit-kembang-tahu
+sistem-produksi-persediaan-ud-kulit-kembang-tahu
