@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fafbfc;
+    color: #333;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #f0f0f0;
+    padding: 24px 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.brand-icon {
+    width: 36px;
+    height: 36px;
+    background: #0ea5e9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand-icon.green {
+    background: #10b981;
+}
+
+.brand-text h2 {
+    font-size: 18px;
+    color: #1f2937;
+    margin-bottom: 2px;
+}
+
+.brand-text p {
+    font-size: 11px;
+    color: #9ca3af;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    margin-bottom: 8px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #6b7280;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.menu a:hover {
+    background-color: #f9fafb;
+}
+
+.menu a.active {
+    background-color: #ecfdf5;
+    color: #10b981;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    margin-left: 250px;
+    padding: 40px;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+/* CARDS */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    border: 1px solid #f3f4f6;
+}
+
+.stat-info p {
+    font-size: 13px;
+    color: #9ca3af;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.stat-info h3 {
+    font-size: 26px;
+    color: #111827;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.stat-info span {
+    font-size: 13px;
+    color: #6b7280;
+    font-weight: 400;
+}
+
+.stat-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-icon.green {
+    background: #ecfdf5;
+    color: #10b981;
+}
+
+.stat-icon.blue {
+    background: #eff6ff;
+    color: #3b82f6;
+}
+
+.stat-icon.orange {
+    background: #fff7ed;
+    color: #f97316;
+}
+
+/* ACTION SECTION */
+.action-section {
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #10b981;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #059669;
+}
+
+/* TABLE SECTION */
+.table-section {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    border: 1px solid #f3f4f6;
+}
+
+.table-section h3 {
+    font-size: 16px;
+    color: #374151;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4b5563;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+td {
+    padding: 16px 0;
+    font-size: 14px;
+    color: #4b5563;
+    border-bottom: 1px solid #f9fafb;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* BADGES */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.badge.success {
+    background-color: #ecfdf5;
+    color: #10b981;
+}
+
+.badge.warning {
+    background-color: #fffbeb;
+    color: #f59e0b;
+}

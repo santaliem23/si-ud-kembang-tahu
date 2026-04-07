@@ -1,3 +1,4 @@
 <?php
-echo "Project SI UD Kembang Tahu berhasil berjalan";
+header("Location: auth/login.php");
+exit;
 ?>
